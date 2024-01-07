@@ -77,6 +77,7 @@ extern const struct dvi_timing dvi_timing_640x480p_60hz;
 extern const struct dvi_timing dvi_timing_800x480p_60hz;
 extern const struct dvi_timing dvi_timing_800x600p_60hz;
 extern const struct dvi_timing dvi_timing_960x540p_60hz;
+extern const struct dvi_timing dvi_timing_1024x600p_60hz;
 extern const struct dvi_timing dvi_timing_1280x720p_30hz;
 
 extern const struct dvi_timing dvi_timing_800x600p_reduced_60hz;

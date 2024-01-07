@@ -34,7 +34,7 @@ static const struct dvi_serialiser_cfg picodvi_dvi_cfg = {
 	.pio = DVI_DEFAULT_PIO_INST,
 	.sm_tmds = {0, 1, 2},
 	.pins_tmds = {10, 12, 14},
-	.pins_clk = 8,
+	.pins_clk = 9,
 	.invert_diffpairs = true
 };
 
@@ -64,9 +64,9 @@ static const struct dvi_serialiser_cfg micromod_cfg = {
 static const struct dvi_serialiser_cfg pico_sock_cfg = {
 	.pio = DVI_DEFAULT_PIO_INST,
 	.sm_tmds = {0, 1, 2},
-	.pins_tmds = {12, 18, 16},
-	.pins_clk = 14,
-	.invert_diffpairs = false
+	.pins_tmds = {10, 12, 14},
+	.pins_clk = 8,
+	.invert_diffpairs = true
 };
 
 // The HDMI socket on Pimoroni Pico Demo HDMI

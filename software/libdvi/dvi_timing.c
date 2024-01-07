@@ -99,6 +99,22 @@ const struct dvi_timing __dvi_const(dvi_timing_960x540p_60hz) = {
 	.bit_clk_khz       = 372000
 };
 
+const struct dvi_timing __dvi_const(dvi_timing_1024x600p_60hz) = {
+	.h_sync_polarity   = false,
+	.h_front_porch     = 40,
+	.h_sync_width      = 40,
+	.h_back_porch      = 40,
+	.h_active_pixels   = 1024,
+
+	.v_sync_polarity   = false,
+	.v_front_porch     = 4,
+	.v_sync_width      = 4,
+	.v_back_porch      = 10,
+	.v_active_lines    = 600,
+
+	.bit_clk_khz       = 372000
+};
+
 // Note this is NOT the correct 720p30 CEA mode, but rather 720p60 run at half
 // pixel clock. Seems to be commonly accepted (and is a valid CVT mode). The
 // actual CEA mode is the same pixel clock as 720p60 but with >50% blanking,
